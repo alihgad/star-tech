@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة التحكم</title>
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="font-[system-ui] bg-slate-100 overx">
+    <!-- Overlay -->
+
+    <aside
+      id="sidebar"
+      class="md:w-4/12 lg:w-3/12 xl:w-2/12  w-1/2 text-white border-l border-slate-700 flex"
+    >
+      <!-- Burger Button -->
+      <button
+        id="burgerButton"
+        class="py-4 text-right px-2 w-6 text-white bg-[#343A40] top-16 z-50 h-16 my-auto rounded-s-2xl"
+      >
+        <
+      </button>
+      <div class="bg-[#343A40] px-2 overflow-y-scroll md:overflow-hidden">
+        <div class="p-4 text-center">
+          <a target="_blank" href="https://startech.tech/"
+            ><img src="public/st.png" alt="logo"
+          /></a>
+        </div>
+        <nav class="mt-8">
+          <a href="#" class="nav-item active">الرئيسية</a>
+          <a href="#" class="nav-item">العملاء</a>
+          <a href="#" class="nav-item">المستخدمين</a>
+          <a href="#" class="nav-item">الموظفين</a>
+          <a href="#" class="nav-item">تاريخ الموظفين</a>
+          <a href="#" class="nav-item">الموردين</a>
+          <a href="#" class="nav-item">خدمات الصالون</a>
+          <a href="#" class="nav-item">خدمات الكافيتريا</a>
+          <a href="#" class="nav-item">خدمات الجاليري</a>
+          <a href="#" class="nav-item">العلامات التجارية</a>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="min-h-screen flex-row-reverse overflow-x-hidden">
+      <!-- Sidebar -->
+
+      <!-- Main Content -->
+      <main id="mainContent" class="overflow-y-auto md:overflow-hidden">
+        <!-- Header -->
+        <header
+          class="bg-white p-4 flex justify-between items-center shadow-sm"
+        >
+          <h1 class="text-2xl font-bold">الصفحة الرئيسية</h1>
+
+          <div class="flex items-center pe-4">
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B966550897496&text&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              <img src="public/w.png" class="h-14" alt="logo" />
+            </a>
+            <a target="_blank" href="https://startech.tech/">
+              <img src="public/st.png" class="h-14" alt="logo" />
+            </a>
+          </div>
+
+          <div class="flex items-center gap-4  ">
+            <img src="" alt="User" class="w-8 h-8 rounded-full" />
+            <span>Super Admin</span>
+          </div>
+        </header>
+
+        <!-- Action Buttons -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+          <button
+            class="p-4 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors"
+          >
+            إنشاء فاتورة للصالون
+          </button>
+          <button
+            class="p-4 rounded-lg bg-yellow-500 text-white hover:bg-yellow-600 transition-colors"
+          >
+            إنشاء فاتورة للجاليري
+          </button>
+          <button
+            class="p-4 rounded-lg bg-green-500 text-white hover:bg-green-600 transition-colors"
+          >
+            إنشاء فاتورة للكافيتريا
+          </button>
+        </div>
+
+        <!-- Statistics Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+          <!-- Salon Stats -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold pb-4 text-center border-b-[1px] border-black"
+            >
+              إيرادات اليوم في الصالون
+            </h2>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">عدد الفواتير</div>
+              <div class="stat-value">25</div>
+            </div>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">إجمالي خدمات اليوم</div>
+              <div class="stat-value">35</div>
+            </div>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">إجمالي إيرادات اليوم</div>
+              <div class="stat-value">2500</div>
+            </div>
+          </div>
+
+          <!-- Gallery Stats -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold pb-4 text-center border-b-[1px] border-black"
+            >
+              إيرادات اليوم في الجاليري
+            </h2>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">عدد الفواتير</div>
+              <div class="stat-value">18</div>
+            </div>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">إجمالي خدمات اليوم</div>
+              <div class="stat-value">28</div>
+            </div>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">إجمالي إيرادات اليوم</div>
+              <div class="stat-value">1800</div>
+            </div>
+          </div>
+
+          <!-- Cafeteria Stats -->
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h2
+              class="text-xl font-bold pb-4 text-center border-b-[1px] border-black"
+            >
+              إيرادات اليوم في الكافيتريا
+            </h2>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">عدد الفواتير</div>
+              <div class="stat-value">42</div>
+            </div>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">إجمالي خدمات اليوم</div>
+              <div class="stat-value">55</div>
+            </div>
+            <div class="text-center mt-4">
+              <div class="font-bold text-xl mb-2">إجمالي إيرادات اليوم</div>
+              <div class="stat-value">3200</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="grid grid-cols-1 gap-6 p-4 md:mx-40 max-w-full">
+          <!-- Revenue Chart -->
+          <div class="bg-white p-6 rounded-lg shadow-sm md:mx-10">
+            <h2 class="text-xl font-bold mb-4">إيرادات الأسبوع</h2>
+            <canvas id="revenueChart"></canvas>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-10">
+            <!-- Services Distribution Chart -->
+            <div class="bg-white p-6 rounded-lg shadow-sm md:mx-10">
+              <h2 class="text-xl font-bold mb-4">الخدمات</h2>
+              <canvas id="servicesChart" class="w-full h-64"></canvas>
+            </div>
+
+            <!-- bills Distribution Chart -->
+            <div class="bg-white p-6 rounded-lg shadow-sm md:mx-10">
+              <h2 class="text-xl font-bold mb-4">الفواتير</h2>
+              <canvas id="billsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="bg-white p-4 flex justify-between items-center border-gray-200 border-t-2">
+      <div class="flex items-center">
+        <a
+          href="https://api.whatsapp.com/send/?phone=%2B966550897496&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <img src="public/w.png" class="h-14" alt="logo" />
+        </a>
+        <a target="_blank" href="https://startech.tech/">
+          <img src="public/st.png" class="h-14" alt="logo" />
+        </a>
+      </div>
+      <div>
+        <p>
+          <b>Copyright &copy; 2023 <a class="text-blue-500 hover:underline" href="https://startech.tech/">StarTech</a></b> All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const revenueCtx = document
+        .getElementById("revenueChart")
+        .getContext("2d");
+      new Chart(revenueCtx, {
+        type: "line",
+        data: {
+          labels: [
+            "السبت",
+            "الأحد",
+            "الاثنين",
+            "الثلاثاء",
+            "الأربعاء",
+            "الخميس",
+            "الجمعة",
+          ],
+          datasets: [
+            {
+              label: "الصالون",
+              data: [2500, 3000, 2800, 3200, 2900, 3500, 2500],
+              borderColor: "#ef4444",
+              tension: 0.4,
+            },
+            {
+              label: "الجاليري",
+              data: [1800, 2200, 2000, 2400, 2100, 2600, 1800],
+              borderColor: "#eab308",
+              tension: 0.4,
+            },
+            {
+              label: "الكافيتريا",
+              data: [3200, 3800, 3500, 4000, 3700, 4200, 3200],
+              borderColor: "#22c55e",
+              tension: 0.4,
+            },
+          ],
+        },
+        options: {
+          // responsive: true,
+          // maintainAspectRatio: true,
+          scales: {
+            y: {
+              // beginAtZero: true
+            },
+          },
+        },
+      });
+
+      // Services Distribution Chart
+      const servicesCtx = document
+        .getElementById("servicesChart")
+        .getContext("2d");
+      new Chart(servicesCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["الصالون", "الجاليري", "الكافيتريا"],
+          datasets: [
+            {
+              data: [35, 28, 55],
+              backgroundColor: ["#ef4444", "#eab308", "#22c55e"],
+              hoverBackgroundColor: ["#ef4444", "#eab308", "#22c55e"],
+              hoverOffset: 10,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          // maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+      });
+
+      // bills Distribution Chart
+      const billsChart = document.getElementById("billsChart").getContext("2d");
+      new Chart(billsChart, {
+        type: "doughnut",
+        data: {
+          labels: ["الصالون", "الجاليري", "الكافيتريا"],
+          datasets: [
+            {
+              data: [35, 28, 55],
+              backgroundColor: ["#ef4444", "#eab308", "#22c55e"],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "bottom",
+            },
+          },
+        },
+      });
+
+      // javascript to hide sidebar
+
+      const burgerButton = document.getElementById("burgerButton");
+      const sidebar = document.getElementById("sidebar");
+
+      let isSidebarVisible = true;
+      let isBurgerVisible = isSidebarVisible;
+
+      burgerButton.addEventListener("click", () => {
+        burgerButton.innerText = isBurgerVisible ? "<" : ">";
+
+        if (isBurgerVisible) {
+          burgerButton.classList.add("move"); // Add the 'move' class to hide the burgerButton
+        } else {
+          burgerButton.classList.remove("move"); // Remove the 'move' class to show the burgerButton
+        }
+
+        isBurgerVisible = !isBurgerVisible;
+
+        if (isSidebarVisible) {
+          sidebar.classList.add("move"); // Add the 'move' class to hide the sidebar
+        } else {
+          sidebar.classList.remove("move"); // Remove the 'move' class to show the sidebar
+        }
+        isSidebarVisible = !isSidebarVisible;
+      });
+    </script>
+  </body>
+</html>
